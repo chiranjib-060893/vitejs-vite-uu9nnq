@@ -4,7 +4,11 @@ module.exports = {
     './src/**/*.{js,jsx,ts,tsx}', // Path to all of your components and pages
   ],
   theme: {
-    extend: {}, // Customize Tailwind styles here if needed
+    extend: {
+      fontFamily: {
+        'poppins': ['Poppins', 'sans-serif'],
+      },
+    }, // Customize Tailwind styles here if needed
   },
   plugins: [],
 };

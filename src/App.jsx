@@ -6,6 +6,7 @@ import About from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import { useEffect, useState } from 'react';
+import Footer from './components/footer';
 
 // const getBackgroundColor = () => {
 //   const hour = new Date().getHours();
@@ -39,12 +40,14 @@ function App() {
           }}
         >
           <Header />
+          
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
+          <Footer/>
         </div>
       </Router>
     </>

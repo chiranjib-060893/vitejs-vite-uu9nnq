@@ -15,23 +15,23 @@ const projects = [
 function Projects() {
   return (
     <div>
-      <ul>
+      <ul className='flex flex-wrap py-20 justify-between'>
         {projects.map((i) => (
-          <li key={i.id} className="">
+          <li key={i.id} className="pb-10">
             <a href={i.url} target="_blank">
               <div class="max-w-sm mx-auto my-4 bg-white shadow-lg rounded-lg overflow-hidden">
                 <img
                   class="w-full h-48 object-cover"
-                  src="https://via.placeholder.com/400x200"
+                  src="/back-card.jpeg"
                   alt="Card Image"
                 />
                 <div class="p-4">
-                  <h2 class="text-lg font-bold mb-2">Card Title</h2>
+                  <h2 class="text-lg font-bold mb-2">{i.name}</h2>
                   <p class="text-gray-700">
                     This is a simple card component styled with Tailwind CSS.
                   </p>
-                  <button class="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
-                    Read More
+                  <button class="mt-4 bg-gray-500 text-black py-2 px-4 rounded hover:bg-gray-600">
+                    Check out
                   </button>
                 </div>
               </div>

@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import Homecards from './Homecards';
+import HomeBanner from './Herobanner';
 
 function Home() {
   const [isLoggedIn, setLoggedIn] = useState(false);
   // const [bannerImage, setBannerImage] = useState(null);
-  const clientId = 's52Q0Qh2wELpJMn6dPUJKHGTtMa6utNQbfgOMlyPsjA';
   const handleClick = () => {
     setLoggedIn((prev) => setLoggedIn(!prev));
     console.log(isLoggedIn);
@@ -38,17 +38,9 @@ function Home() {
         padding: 0,
       }}
     >
-      <div className="p-20 flex items-center justify-center flex-wrap">
-        <header className="px-3 py-1 border border-black border-solid rounded-full">
-          Welcome to My Portfolio
-        </header>
-
-        <h1 className="text-2xl font-bold uppercase p-8 w-full py-20 animate-pulse ease-in text-gray italic">
-          Chiranjib Bhattacharjee
-        </h1>
-      </div>
-
-      <section className="text-xl flex">
+      <HomeBanner imageId = "YaZY5TH50jQ" />
+      
+      <section className="text-xl flex text-gray">
         <p>Hello! I’m Chiranjib Bhattacharjee, a passionate Front End Developer
         with a knack for creating visually appealing and user-friendly web
         applications. With a strong foundation in HTML, CSS, and JavaScript, I
